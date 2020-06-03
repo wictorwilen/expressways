@@ -1,0 +1,25 @@
+{
+  "name": "expressways",
+  "version": "0.0.1",
+  "description": "A simple but automagic way of creating express routers and route methods",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Wictor Wilén (wictor@wictorwilen.se)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/express-serve-static-core": "^4.17.7",
+    "@types/reflect-metadata": "^0.1.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "reflect-metadata": "^0.1.13"
+  }
+}

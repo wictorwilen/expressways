@@ -1,0 +1,12 @@
+# Folders
+.vscode
+node_modules
+src
+.github
+tests
+temp-templates
+
+# Files
+.git*
+tsconfig.json 
+*.tgz
