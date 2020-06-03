@@ -1,2 +1,2 @@
-export * from './method';
+export * from './way';
 export * from './expressways';

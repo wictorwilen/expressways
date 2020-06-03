@@ -5,9 +5,9 @@ import { RequestHandler, Router } from "express";
  */
 export interface expresswaysOptions {
     /**
-     * The route methods to use
+     * The ways (route methods) to use
      */
-    methods: any;
+    ways: any;
 
     /**
      * Optional additional Express Request handlers
