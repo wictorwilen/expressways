@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// Copyright Wictor Wilén 2020
+
 import "reflect-metadata";
 import * as  core from "express-serve-static-core";
 import { ParsedQs } from "qs";

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// Copyright Wictor Wilén 2020
+
 import { RequestHandler, Router } from "express";
 
 /**
