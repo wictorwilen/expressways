@@ -1,6 +1,6 @@
 {
   "name": "expressways",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple but automagic way of creating express routers and route methods",
   "main": "dist/index.js",
   "homepage": "https://github.com/wictorwilen/expressways",

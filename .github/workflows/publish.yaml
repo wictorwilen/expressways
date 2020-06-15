@@ -1,7 +1,7 @@
-name: expressways Publish
+name: expressways npm package Publish
 on:
   release:
-    types: [created]
+    types: [published]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,6 +13,11 @@ jobs:
         registry-url: 'https://registry.npmjs.org'
     - run: npm install
     - run: npm build
-    - run: npm publish
+    - run: npm publish --tag preview
+      if: github.event.release.prerelease
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    - run: npm publish --tag preview
+      if: "!github.event.release.prerelease"
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}        

@@ -1,4 +1,4 @@
-name: expressways CI-CD
+name: expressways CI
 
 on: [push]
 
