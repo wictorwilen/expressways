@@ -12,12 +12,12 @@ jobs:
         node-version: '12.x'
         registry-url: 'https://registry.npmjs.org'
     - run: npm install
-    - run: npm build
+    - run: npm run build
     - run: npm publish --tag preview
       if: github.event.release.prerelease
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-    - run: npm publish --tag preview
+    - run: npm publish
       if: "!github.event.release.prerelease"
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}        
